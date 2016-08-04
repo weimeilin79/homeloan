@@ -1,10 +1,10 @@
 #!/bin/sh 
 DEMO="JBoss Fuse Getting Started Home Loan Demo"
-VERSION=6.2.0
+VERSION=6.2.1
 AUTHORS="Christina Lin"
 PROJECT="https://github.com/jbossdemocentral/jboss-fuse-homeloan.git"
-FUSE=jboss-fuse-6.2.0.redhat-133
-FUSE_BIN=jboss-fuse-full-6.2.0.redhat-133.zip
+FUSE=jboss-fuse-6.2.1.redhat-084
+FUSE_BIN=jboss-fuse-full-6.2.1.redhat-084.zip
 DEMO_HOME=./target
 FUSE_HOME=$DEMO_HOME/$FUSE
 FUSE_PROJECT=./project/homeloan
@@ -58,6 +58,9 @@ if [[ $verone -eq 3 ]] && [[ $vertwo -eq 1 ]] && [[ $verthree -ge 1 ]]; then
 elif [[ $verone -eq 3 ]] && [[ $vertwo -eq 2 ]] && [[ $verthree -le 4 ]]; then
 		echo  Correct Maven version $verone.$vertwo.$verthree
 		echo
+elif [[ $verone -eq 3 ]] && [[ $vertwo -eq 3 ]] && [[ $verthree -le 3 ]]; then
+                echo  Correct Maven version $verone.$vertwo.$verthree
+                echo
 else
 		echo Please make sure you have Maven 3.1.1 - 3.2.4 installed in order to use fabric maven plugin.
 		echo
