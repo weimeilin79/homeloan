@@ -8,16 +8,16 @@ System requirements
 -----------------------
 Before building and running this quick start you need:
 
-Maven 3.1.1 - 3.2.4 included
-JDK 1.6 or 1.7
-JBoss Fuse 6.2
+Maven 3.1.1 - 3.2.4 or 3.3.3 included
+JDK 1.6 or 1.7 or 1.8
+JBoss Fuse 6.2.1
 
 Install on your machine
 -----------------------
 1. Download this project and unzip OR git clone this onto your desktop.
 2. Add products to installs directory.
 3. Run 'init.sh'
-4. Although our shell script has already started the FUSE server, if you need to manually start the server in the future, just run `./target/jboss-fuse-6.2.0.redhat-133/bin/start`
+4. Although our shell script has already started the FUSE server, if you need to manually start the server in the future, just run `./target/jboss-fuse-6.2.1.redhat-084/bin/start`
 5. Login to Fuse management console at:  http://localhost:8181    (u:admin/p:admin).
 6. Under Containers tab, you will see 5 containers, select and start them all.  
 7. Enjoy the demo!
@@ -26,7 +26,7 @@ Demo Scenario
 -----------------------
 1. The demo should have been already started by executing 'init.sh'
 2. Login to Fuse management console at http://localhost:8181 (u:admin/p:admin)
-3. Start home loan application, place the /support/data file to target/jboss-fuse-6.2.0.redhat-133/instances/datarecievercon/datafile
+3. Start home loan application, place the /support/data file to target/jboss-fuse-6.2.1.redhat-084/instances/datarecievercon/datafile
   1. homeloancust.xml
   2. homeloancust-2.xml
   3. homeloanhouse.xml
@@ -43,9 +43,9 @@ Demo Scenario
 Shutdown the demo
 -----------------------
 1. To stop the JBoss FUSE Server and all the containers, run
-  1. `./target/jboss-fuse-6.2.0.redhat-133/bin/admin stop homeloan`
-  2. `./target/jboss-fuse-6.2.0.redhat-133/bin/admin stop summarycon`
-  3. `./target/jboss-fuse-6.2.0.redhat-133/bin/admin stop custcon`
-  4. `./target/jboss-fuse-6.2.0.redhat-133/bin/admin stop datarecievercon`
-  5. `./target/jboss-fuse-6.2.0.redhat-133/bin/admin stop housecon`
-  6. `./target/jboss-fuse-6.2.0.redhat-133/bin/admin stop root`
+  1. `./target/jboss-fuse-6.2.1.redhat-084/bin/admin stop homeloan`
+  2. `./target/jboss-fuse-6.2.1.redhat-084/bin/admin stop summarycon`
+  3. `./target/jboss-fuse-6.2.1.redhat-084/bin/admin stop custcon`
+  4. `./target/jboss-fuse-6.2.1.redhat-084/bin/admin stop datarecievercon`
+  5. `./target/jboss-fuse-6.2.1.redhat-084/bin/admin stop housecon`
+  6. `./target/jboss-fuse-6.2.1.redhat-084/bin/admin stop root`
